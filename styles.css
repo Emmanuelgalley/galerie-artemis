@@ -30,7 +30,6 @@ em{font-family:Newsreader,Georgia,serif;font-style:italic}
 .trk>div{display:flex;align-items:center}
 .trk i{display:block;width:.8em;height:.07em;margin:0 .45em;background:linear-gradient(90deg,var(--or),var(--or2))}
 @keyframes mq{to{transform:translateX(-50%)}}
-
 .menu{position:fixed;inset:0;z-index:20;background:#000;color:#fff;display:flex;flex-direction:column;justify-content:space-between;padding:calc(env(safe-area-inset-top,0px) + 120px) var(--m) calc(env(safe-area-inset-bottom,0px) + 24px);visibility:hidden;clip-path:inset(0 0 100% 0);transition:clip-path .7s var(--e),visibility 0s linear .7s}
 .menu.open{clip-path:inset(0);visibility:visible;transition:clip-path .7s var(--e),visibility 0s linear 0s}
 .menu .cl{top:calc(env(safe-area-inset-top,0px) + clamp(64px,7.3vw,100px)/2);border-color:rgba(255,255,255,.45);font-size:13px}
