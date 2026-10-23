@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Artemis Galerie</title>
+<meta name="description" content="Artemis Galerie, art contemporain. Catalogue des œuvres et informations de visite.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,100..900&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="hero">
+  <div id="hart"></div>
+  <a class="lg" href="#" aria-label="Artemis Galerie"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAADcCAYAAACWN4jVAABsyElEQVR42u19d5wc1ZX1ufe9quqePMo5oIRGYSSNACHAQuTsgCUbB2zWxux612wAAAABJRU5ErkJggg==" alt="Artemis Galerie" aria-hidden="true"></a>
+  <button class="bg" aria-label="Menu" aria-expanded="false"><i></i><i></i><i></i></button>
+  <h1 class="sr">Artemis Galerie</h1>
+  <p class="pitch" data-i="pitch"></p>
+  <div class="mq" aria-hidden="true"><div class="trk" id="trk"></div></div>
+  <p class="ct" id="ct"></p>
+</header>
+<nav class="menu" id="menu" aria-label="Menu">
+  <button class="cl" id="cl" data-i="close"></button>
+  <ul><li><a href="#collection" data-i="nCol"></a></li><li><a href="#visite" data-i="nVis"></a></li></ul>
+  <div class="ft"><div class="lang" role="group" aria-label="Langue"><button data-l="fr">FR</button><button data-l="en">EN</button></div>
+  <a href="https://www.instagram.com/artemisgalerietg/" target="_blank" rel="noopener">Instagram</a>
+  <a href="https://www.facebook.com/p/Artemis-Galerie-61569428815346/" target="_blank" rel="noopener">Facebook</a>
+  <a href="https://www.tiktok.com/@artemis.galerie" target="_blank" rel="noopener">TikTok</a></div>
+</nav>
+<main>
+  <section class="sec" id="collection">
+    <div class="hd"><h2 data-i="nCol"></h2><div class="flt" id="flt" role="group"></div></div>
+    <div class="wall" id="wall"></div>
+  </section>
+  <section class="sec visit" id="visite">
+    <div><h2 data-i="nVis"></h2><address data-i="addr"></address></div>
+    <div>
+      <dl id="hrs"></dl>
+      <div class="btns"><a class="btn k" id="wa" target="_blank" rel="noopener"></a><a class="btn" href="https://maps.app.goo.gl/XiqSTBWZrN7b4yDK7" target="_blank" rel="noopener" data-i="dir"></a></div>
+      <div class="cn"><a href="tel:+22870211111">+228 70 21 11 11</a><a href="mailto:galerieartemis@gmail.com">galerieartemis@gmail.com</a></div>
+    </div>
+  </section>
+</main>
+<footer><span>© 2026 Artemis Galerie</span>
+<nav><a href="https://www.instagram.com/artemisgalerietg/" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/p/Artemis-Galerie-61569428815346/" target="_blank" rel="noopener">Facebook</a><a href="https://www.tiktok.com/@artemis.galerie" target="_blank" rel="noopener">TikTok</a></nav></footer>
+<script>
+const W=[
+{id:1,a:'Ayélé Dosseh',t:['Saison des pluies','Rainy season'],y:2025,m:['Huile sur toile','Oil on canvas'],d:'120 × 90 cm',pr:850000,s:'d',r:4/3,st:'b',p:['#1B0F08','#5E2A10','#B8651A','#E0A84A','#F8E7C7'],src:'WhatsApp Image 2026-10-23 at 02.04.41.jpeg'},
+{id:2,a:'Marc Lenoir',t:['Cadastre n°4','Land register no. 4'],y:2024,m:['Acrylique sur toile','Acrylic on canvas'],d:'100 × 140 cm',pr:1200000,s:'r',r:5/7,st:'f',p:['#E8E4DA','#1F3A4D','#C2452D','#E3C39A','#BCC2C7'],src:'WhatsApp Image 2026-10-23 at 02.07.25.jpeg'},
+{id:3,a:'Fiona Mensah',t:['Le soir se retire','Evening withdraws'],y:2025,m:['Huile sur toile','Oil on canvas'],d:'150 × 100 cm',pr:1600000,s:'d',r:1.5,st:'c',p:['#14213D','#FCA311','#E5E5E5','#8C9A9E','#F0B27A'],src:'WhatsApp Image 2026-10-23 at 02.08.00.jpeg'},
+{id:4,a:'Kossi Agbo',t:['Sans titre (rouge)','Untitled (red)'],y:2023,m:['Technique mixte sur papier','Mixed media on paper'],d:'70 × 70 cm',pr:450000,s:'v',r:1,st:'s',p:['#EFE9DF','#B3261E','#11B7A5','#F5C74F','#E0D7C5'],src:'WhatsApp Image 2026-10-23 at 02.09.50.jpeg'},
+{id:5,a:'Ayélé Dosseh',t:['Trois fenêtres','Three windows'],y:2025,m:['Acrylique sur toile','Acrylic on canvas'],d:'80 × 120 cm',pr:700000,s:'d',r:2/3,st:'f',p:['#D9CBB0','#3B5B4F','#C9892B','#E0E2DE','#A8A062']},
+{id:6,a:'Inès Gbadamassi',t:['Terre battue','Packed earth'],y:2024,m:['Huile et sable sur toile','Oil and sand on canvas'],d:'140 × 100 cm',pr:1350000,s:'d',r:1.4,st:'b',p:['#CDB08A','#8A4B2A','#D86E3B','#E9D8B2','#F7F3EB']},
+{id:7,a:'Marc Lenoir',t:['Cadastre n°7','Land register no. 7'],y:2024,m:['Acrylique sur toile','Acrylic on canvas'],d:'90 × 90 cm',pr:950000,s:'d',r:1,st:'f',p:['#1A1A1A','#D8D2C4','#C2452D','#3B5D5A','#F0D190']},
+{id:8,a:'Fiona Mensah',t:['Passage','Passage'],y:2025,m:['Huile sur toile','Oil on canvas'],d:'60 × 80 cm',pr:520000,s:'r',r:.75,st:'c',p:['#E9DDC8','#2D4A3E','#D9A441','#7A2E2E','#F0F4F4']}];
+const T={fr:{pitch:'Une sélection d’art contemporain, à parcourir ici avant de venir la voir à la galerie.',head:'L’ART CONTEMPORAIN, DE PRÈS',nCol:'Collection',nVis:'Visite',close:'Fermer',addr:'Forever, près de la forme — rue de la galerie, Lomé',loc:'fr-FR',wa:'WhatsApp',dir:'Itinéraire',gen:'Bonjour, je voudrais recevoir plus d’informations sur la collection.',f:{all:'Tout',d:'Dessin',r:'Peinture',v:'Varia',s:'Sérigraphie'},h:[['Lun.','10:00–18:00'],['Mar.','10:00–18:00'],['Mer.','10:00–18:00'],['Jeu.','10:00–18:00'],['Ven.','10:00–18:00'],['Sam.','11:00–16:00'],['Dim.','Fermé']]},
+en:{pitch:'A selection of contemporary art to browse here before visiting the gallery.',head:'CONTEMPORARY ART, UP CLOSE',nCol:'Collection',nVis:'Visit',close:'Close',addr:'Forever, near the form — gallery street, Lomé',loc:'en-US',wa:'WhatsApp',dir:'Directions',gen:'Hello, I would like more information about the collection.',f:{all:'All',d:'Drawing',r:'Painting',v:'Varied',s:'Screen print'},h:[['Mon.','10:00–18:00'],['Tue.','10:00–18:00'],['Wed.','10:00–18:00'],['Thu.','10:00–18:00'],['Fri.','10:00–18:00'],['Sat.','11:00–16:00'],['Sun.','Closed']]}};
+const $=s=>document.querySelector(s),$$=s=>document.querySelectorAll(s),NUM='22870211111';
+let L='fr',F='all';try{L=localStorage.getItem('lg')||'fr'}catch(e){}
+let cur=0;const HS=[W[0],W[1],W[2]];function cap(){const h=HS[cur];$('#ct').innerHTML=`${h.a}, <em>${h.t[L==='en'?1:0]}</em>, ${h.y}`}
+const R=a=>()=>{a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296};
+function art(w,k,hero){
+  if(w.src){
+    return `<img src="${w.src}" alt="${w.t[L==='en'?1:0]}" class="${hero?'art':'photo'}" loading="lazy" ${hero ? 'style="width:100%;height:100%;object-fit:cover;display:block;"' : 'style="width:100%;height:auto;display:block;object-fit:cover;"'}>`;
+  }
+  const H=Math.round(1000/w.r),r=R(w.id*977),p=w.p,c=()=>p[Math.floor(r()*p.length)];let s=`<rect width="1000" height="${H}" fill="${p[0]}"/>`;
+  if(w.st==='b'){s+=`<circle cx="${300+r()*400}" cy="${H*.34}" r="${H*.1}" fill="${p[p.length-2]}"/>`;for(let i=1;i<5;i++){const y=H*i/5+(r()-.5)*H*.06;s+=`<path d="M0 ${y}C300 ${y-H*.07*r()} 700 ${y+H*.07*r()} 1000 ${y}" stroke="${p[i%p.length]}" stroke-width="${24+r()*18}" fill="none" opacity=".9"/>`}} else if(w.st==='f'){let y=H*.07;for(let i=1;i<4;i++){const h=H*(.15+r()*.12);s+=`<rect x="${70+r()*70}" y="${y}" width="${700+r()*170}" height="${h}" fill="${p[i%p.length]}" opacity=".94"/>`;y+=h+H*.05}} else if(w.st==='c'){for(let i=0;i<4;i++)s+=`<circle cx="${r()*1000}" cy="${r()*H}" r="${120+r()*260}" fill="${c()}" opacity=".86"/>`;s+=`<circle cx="500" cy="${H/2}" r="${H*.3}" fill="none" stroke="${p[3]}" stroke-width="${H*.08}" opacity=".7"/>`} else for(let i=0;i<6;i++){const q=()=>`${r()*1000} ${r()*H}`;s+=`<path d="M${q()}C${q()} ${q()} ${q()}" stroke="${c()}" stroke-width="${30+r()*70}" fill="none" stroke-linecap="round" opacity=".9"/>`}
+  s+=`<filter id="n${k}"><feTurbulence baseFrequency=".85" numOctaves="2" seed="${w.id}"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .22 0"/></filter><rect width="1000" height="${H}" filter="url(#n${k})" opacity=".45"/>`;
+  return `<svg viewBox="0 0 1000 ${H}" ${hero?'class="art" preserveAspectRatio="xMidYMid slice"':''} role="img" aria-label="${w.t[L==='en'?1:0]}">${s}</svg>`;
+}
+const fm=n=>new Intl.NumberFormat(T[L].loc).format(n)+'\u00a0FCFA',wa=m=>`https://wa.me/${NUM}?text=${encodeURIComponent(m)}`;
+function card(w){const x=T[L],n=w.r<.9?72:w.r<1.1?86:100,ti=w.t[L==='en'?1:0];
+ return `<figure style="width:${n}%">${art(w,w.id)}<figcaption><div class="ar">${w.a}</div><div class="tt"><em>${ti}</em></div><div class="mt">${w.y}, ${w.m[L==='en'?1:0].toLowerCase()}, ${w.d}</div><div class="row"><b>${fm(w.pr)}</b><span class="r"></span><span class="v">${w.s.toUpperCase()}</span></div><a class="ask" href="https://wa.me/${NUM}?text=${encodeURIComponent(`Bonjour, je suis intéressé par ${w.a} – ${ti}.`) }" target="_blank" rel="noopener">${x.wa}</a></figcaption></figure>`}
+function render(){const x=T[L],h=W[0];document.documentElement.lang=L;
+  $$('[data-i]').forEach(e=>e.textContent=x[e.dataset.i]);
+  const seg=`<span>${x.head}</span><i></i>`;$('#trk').innerHTML=`<div>${seg.repeat(2)}</div><div>${seg.repeat(2)}</div>`;
+  $('#hart').innerHTML=HS.map((w,i)=>art(w,'h'+i,1).replace('class="art"','class="art'+(i===cur?' on':'')+'"')).join('');cap();
+  $('#flt').innerHTML=Object.keys(x.f).map(k=>`<button data-f="${k}" aria-pressed="${k===F}">${x.f[k]}</button>`).join('');
+  $('#wall').innerHTML=W.filter(w=>F==='all'||w.s===F).map(card).join('');
+  $('#hrs').innerHTML=x.h.map(r=>`<dt>${r[0]}</dt><dd>${r[1]}</dd>`).join('');
+  $('#wa').textContent=x.wa;$('#wa').href=wa(x.gen);
+  $$('.lang button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.l===L))}
+document.addEventListener('click',e=>{const b=e.target.closest('[data-f],[data-l]');if(!b)return;
+ if(b.dataset.f){F=b.dataset.f;const y=scrollY;render();scrollTo(0,y)}
+ else{L=b.dataset.l;try{localStorage.setItem('lg',L)}catch(_){}render()}});
+ const mn=$('#menu'),bg=$('.bg');mn.inert=true;
+ function tg(o){mn.classList.toggle('open',o);bg.setAttribute('aria-expanded',o);mn.inert=!o;(o?$('#cl'):bg).focus()}
+ bg.onclick=()=>tg(true);$('#cl').onclick=()=>tg(false);$$('#menu a[href^="#"]').forEach(a=>a.onclick=()=>tg(false));
+ addEventListener('keydown',e=>{if(e.key==='Escape'&&mn.classList.contains('open'))tg(false)});
+ render();
+ setInterval(()=>{if(document.hidden||matchMedia('(prefers-reduced-motion:reduce)').matches)return;cur=(cur+1)%HS.length;$$('#hart .art').forEach((s,i)=>s.classList.toggle('on',i===cur));cap()},7000)
+</script>
+</body>
+</html>
